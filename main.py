@@ -4,12 +4,14 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
-
-@app.get("/tools")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
+    return {"fio": "rupasovk"}
 
 @app.get("/users")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
+def read_item():
+    return {"phone_number": "89132399999"}
+
+@app.get("/tools")
+def read_item():
+    return {"skills": "C#, ASP.NET SQL, T-SQL, EntityFramework"}
+
+# Rupasov 402
